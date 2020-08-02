@@ -1,4 +1,4 @@
-export const spacing = {
+export const metrics = {
   smallest: 3,
   small: 5,
   base: 10,
