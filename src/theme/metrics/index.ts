@@ -4,4 +4,9 @@ export const metrics = {
   base: 10,
   large: 20,
   largest: 40,
+  buttonHeight: 60,
+  radiusBase: 4,
+  radiusLarge: 20,
+  radiusRounded: 50,
+  borderWidth: 1,
 };

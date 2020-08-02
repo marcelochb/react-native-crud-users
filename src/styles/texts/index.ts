@@ -1,4 +1,4 @@
-import {colors, typography, metrics} from '@src/theme';
+import {colors, typography} from '@src/theme';
 import {TextStyle} from 'react-native';
 
 const textRegular: TextStyle = {
