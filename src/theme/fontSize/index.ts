@@ -1,5 +1,5 @@
 export const fontSize = {
-  base: '14px',
-  large: '18px',
-  largest: '22px',
+  base: 14,
+  large: 18,
+  largest: 22,
 };

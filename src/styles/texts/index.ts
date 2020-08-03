@@ -3,23 +3,23 @@ import {TextStyle} from 'react-native';
 
 // import { Container } from './styles';
 
-export const useTexts = () => {
-  const {colors, typography} = useTheme();
+export const useTextStyles = () => {
+  const {colors, fontSize} = useTheme();
 
   const textRegular: TextStyle = {
     fontFamily: 'Lato-Regular',
   };
 
   const baseSize: TextStyle = {
-    fontSize: typography.base,
+    fontSize: fontSize.base,
   };
 
   const largeSize: TextStyle = {
-    fontSize: typography.large,
+    fontSize: fontSize.large,
   };
 
   const largestSize: TextStyle = {
-    fontSize: typography.largest,
+    fontSize: fontSize.largest,
   };
 
   const primaryColor: TextStyle = {

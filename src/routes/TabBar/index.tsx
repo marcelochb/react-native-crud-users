@@ -7,13 +7,13 @@ import IconStatistics from '@src/assets/icons/statistics.svg';
 import { UsersStack } from './Users';
 import { SearchStack } from './Search';
 import { StatisticsStak } from './Statistics';
-import { bottomTabBarOptions } from '../styles';
+import { bottomTabBarOptions, useRouteStyles } from '../styles';
 
 const TabBottom = createBottomTabNavigator();
 
 export const TabBar = () => {
   return (
-    <TabBottom.Navigator lazy={false} tabBarOptions={bottomTabBarOptions}>
+    <TabBottom.Navigator lazy={false} tabBarOptions={() => useRouteStyles}>
       <TabBottom.Screen
         name="User"
         component={UsersStack}

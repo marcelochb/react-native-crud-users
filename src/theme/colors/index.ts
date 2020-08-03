@@ -1,3 +1,5 @@
+import {propertsOfOptionTheme} from './types';
+
 const baseColors = {
   basePrimary: '#fff',
   baseSecundary: '#F2F2F2',
@@ -20,4 +22,26 @@ export const lightTheme = {
   elementsColor: baseColors.baseSecundary,
   textPrimaryColor: baseColors.contrastPrimary,
   textSecundaryColor: baseColors.intermediate,
+};
+
+export const useColors = (initialTheme: string) => {
+  const optionsTheme: propertsOfOptionTheme = {
+    ['light']: {
+      title: 'light',
+      backgroundColor: baseColors.basePrimary,
+      elementsColor: baseColors.baseSecundary,
+      textPrimaryColor: baseColors.contrastPrimary,
+      textSecundaryColor: baseColors.intermediate,
+    },
+    ['dark']: {
+      title: 'dark',
+      backgroundColor: baseColors.contrastPrimary,
+      elementsColor: baseColors.contrastSecundary,
+      textPrimaryColor: baseColors.basePrimary,
+      textSecundaryColor: baseColors.intermediate,
+    },
+  };
+  return {
+    colors: optionsTheme[initialTheme],
+  };
 };

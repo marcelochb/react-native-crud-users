@@ -12,14 +12,14 @@ declare module 'styled-components' {
     fontSize: {
       base: string;
       large: string;
-      lagest: string;
+      largest: string;
     };
     metrics: {
       smallest: string;
       small: string;
       base: string;
       large: string;
-      lagest: string;
+      largest: string;
       inputHeight: string;
       inputWidthBase: string;
       inputWidthLarge: string;

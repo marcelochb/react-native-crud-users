@@ -1,2 +1,2 @@
 export {useButtons} from './buttons';
-export {useTexts} from './texts';
+export {useTextStyles} from './texts';
