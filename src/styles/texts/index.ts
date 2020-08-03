@@ -1,84 +1,79 @@
-import {colors, typography} from '@src/theme';
+import {useTheme} from '@src/theme';
 import {TextStyle} from 'react-native';
 
-const textRegular: TextStyle = {
-  fontFamily: 'Lato-Regular',
-};
+// import { Container } from './styles';
 
-const baseSize: TextStyle = {
-  fontSize: typography.base,
-};
+export const useTexts = () => {
+  const {colors, typography} = useTheme();
 
-const largeSize: TextStyle = {
-  fontSize: typography.large,
-};
+  const textRegular: TextStyle = {
+    fontFamily: 'Lato-Regular',
+  };
 
-const largestSize: TextStyle = {
-  fontSize: typography.largest,
-};
+  const baseSize: TextStyle = {
+    fontSize: typography.base,
+  };
 
-const primaryColor: TextStyle = {
-  color: colors.primary,
-};
+  const largeSize: TextStyle = {
+    fontSize: typography.large,
+  };
 
-const secundaryColor: TextStyle = {
-  color: colors.secundary,
-};
+  const largestSize: TextStyle = {
+    fontSize: typography.largest,
+  };
 
-const tertiaryColor: TextStyle = {
-  color: colors.tertiary,
-};
+  const primaryColor: TextStyle = {
+    color: colors.textPrimaryColor,
+  };
 
-export const basePrimaryColor: TextStyle = {
-  ...textRegular,
-  ...baseSize,
-  ...primaryColor,
-};
+  const secundaryColor: TextStyle = {
+    color: colors.textSecundaryColor,
+  };
 
-export const largePrimaryColor: TextStyle = {
-  ...textRegular,
-  ...largeSize,
-  ...primaryColor,
-};
+  const basePrimaryColor: TextStyle = {
+    ...textRegular,
+    ...baseSize,
+    ...primaryColor,
+  };
 
-export const largestPrimaryColor: TextStyle = {
-  ...textRegular,
-  ...largestSize,
-  ...primaryColor,
-};
+  const largePrimaryColor: TextStyle = {
+    ...textRegular,
+    ...largeSize,
+    ...primaryColor,
+  };
 
-export const baseSecundaryColor: TextStyle = {
-  ...textRegular,
-  ...baseSize,
-  ...secundaryColor,
-};
+  const largestPrimaryColor: TextStyle = {
+    ...textRegular,
+    ...largestSize,
+    ...primaryColor,
+  };
 
-export const largeSecundaryColor: TextStyle = {
-  ...textRegular,
-  ...largeSize,
-  ...secundaryColor,
-};
+  const baseSecundaryColor: TextStyle = {
+    ...textRegular,
+    ...baseSize,
+    ...secundaryColor,
+  };
 
-export const largestSecundaryColor: TextStyle = {
-  ...textRegular,
-  ...largestSize,
-  ...secundaryColor,
-};
+  const largeSecundaryColor: TextStyle = {
+    ...textRegular,
+    ...largeSize,
+    ...secundaryColor,
+  };
 
-export const baseTertiaryColor: TextStyle = {
-  ...textRegular,
-  ...baseSize,
-  ...tertiaryColor,
-};
+  const largestSecundaryColor: TextStyle = {
+    ...textRegular,
+    ...largestSize,
+    ...secundaryColor,
+  };
 
-export const largeTertiaryColor: TextStyle = {
-  ...textRegular,
-  ...largeSize,
-  ...tertiaryColor,
-};
-
-export const largestTertiaryColor: TextStyle = {
-  ...textRegular,
-  ...largestSize,
-  ...tertiaryColor,
+  return {
+    texts: {
+      basePrimaryColor,
+      largePrimaryColor,
+      largestPrimaryColor,
+      baseSecundaryColor,
+      largeSecundaryColor,
+      largestSecundaryColor,
+    },
+  };
 };
